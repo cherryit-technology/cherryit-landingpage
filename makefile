@@ -7,3 +7,6 @@ run:
 build:
 	npm run build
 	npm run export
+
+server: build
+	npm run server
