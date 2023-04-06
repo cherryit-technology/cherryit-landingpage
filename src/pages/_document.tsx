@@ -9,7 +9,7 @@ import Document, {
 } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
 import { AppType } from 'next/app';
-import theme, { podkova, redHatDisplay } from '../theme';
+import theme from '../theme';
 import createEmotionCache from '../createEmotionCache';
 import { MyAppProps } from './_app';
 
@@ -19,11 +19,17 @@ interface MyDocumentProps extends DocumentProps {
 
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
   return (
-    <Html lang="en" className={[podkova.className, redHatDisplay.className].join(',')}>
+    <Html lang="pt-BR">
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
         <link rel="shortcut icon" href="/favicon.ico" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Federant&family=Podkova:wght@400;500;600;700;800&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Federant&family=Podkova:wght@400;500;600;700;800&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></link>
+
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
