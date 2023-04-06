@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Container, Divider, Grid, Stack, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Container, Divider, Grid, Paper, Stack, Toolbar, Typography } from '@mui/material';
 import marcaCherryItBranca from '../assets/Marca_CherryIt_Branca_2.png'
 import transparentDellOptiPlex7400AllinOneMockup from '../assets/TransparentDellOptiPlex7400AllinOneMockup.png'
 import transparentiPhone14ProMockup from '../assets/TransparentiPhone14ProMockup.png'
 import Image from 'next/image';
 import { PlayCircle } from '@mui/icons-material';
+import { Section } from '@/components/section';
+import { SectionTitle } from '@/components/sectionTitle';
 
 export default function Home() {
   return (
@@ -89,7 +91,7 @@ export default function Home() {
       </AppBar>
 
       <Container
-        sx={{ mt: 12 }}
+        sx={{ mt: 12, mb: 12 }}
         maxWidth='xl'
       >
 
@@ -225,23 +227,183 @@ export default function Home() {
             </Grid>
           </Grid>
 
-          {/* <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          
-          <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          
-          <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          
-          <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          
-          <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          <Section>
+            <SectionTitle type='red'>
+              Sobre nós
+            </SectionTitle>
+            <Stack flexDirection="row" justifyContent="center" gap={6}>
+              <Stack
+                gap={6}
+                maxWidth='435px'
+              >
+                <Typography
+                  sx={{
+                    minHeight: 130,
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '24px',
+                    textTransform: 'capitalize',
+                    color: '#000000',
+                  }}
+                >
+                  A Cherry IT é uma software house que domina a utilização da tecnologia para facilitar a vida de empresas, criando soluções digitais que ajudam a posicionar parceiros como lideranças em seus segmentos. Em sua trajetória beneficiamos startups disruptivas, órgãos governamentais brasileiros e empresas de consultoria consolidadas.
+                </Typography>
 
-          <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/> */}
+                <Stack
+                  component={Paper}
+                  justifyContent="center"
+                  alignItems="center"
+                  gap={2}
+                  p={6}
+                  borderRadius={10}
+                  height="100%"
+                >
+                  <Box 
+                    sx={{
+                      height: 40,
+                      width: 40,
+                      borderRadius: 100,
+                      backgroundColor: '#E6F7FF'
+                    }}
+                  />
+                  <Typography
+                    sx={{
+                      fontFamily: 'Red Hat Display',
+                      fontStyle: 'normal',
+                      fontWeight: 700,
+                      fontSize: '20px',
+                      lineHeight: '26px',
+                      textAlign: 'center',
+                      textTransform: 'capitalize',
+                      color: '#000000',
+                    }}
+                  >
+                    Missão
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: 'Red Hat Display',
+                      fontStyle: 'normal',
+                      fontWeight: 400,
+                      fontSize: '20px',
+                      lineHeight: '28px',
+                      textAlign: 'center',
+                      textTransform: 'capitalize',
+                      color: '#000000',
+                    }}
+                  >
+                    trazer um ar humano e integrado com a vida através da tecnologia aliada a criatividade humana
+                  </Typography>
+                </Stack>
+              </Stack>
+              <Stack
+                gap={6}
+                maxWidth='435px'
+              >
+                <Typography
+                  sx={{
+                    minHeight: 130,
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '24px',
+                    textTransform: 'capitalize',
+                    color: '#000000',
+                  }}
+                >
+                  A cerejeira é uma das árvores que frutificam no início da primavera, marcando o período das estações mais alegres, e, nas regiões mais frias, onde o inverno é rigoroso, traz uma simbologia de renovação da vida que ciclicamente se adapta e se renova ano após ano.
+                </Typography>
+
+                <Stack
+                  component={Paper}
+                  justifyContent="center"
+                  alignItems="center"
+                  gap={2}
+                  p={6}
+                  borderRadius={10}
+                  height="100%"
+                >
+                  <Box 
+                    sx={{
+                      height: 40,
+                      width: 40,
+                      borderRadius: 100,
+                      backgroundColor: '#DBFFB7'
+                    }}
+                  />
+                  <Typography
+                    sx={{
+                      fontFamily: 'Red Hat Display',
+                      fontStyle: 'normal',
+                      fontWeight: 700,
+                      fontSize: '20px',
+                      lineHeight: '26px',
+                      textAlign: 'center',
+                      textTransform: 'capitalize',
+                      color: '#000000',
+                    }}
+                  >
+                    Valores
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontFamily: 'Red Hat Display',
+                      fontStyle: 'normal',
+                      fontWeight: 400,
+                      fontSize: '20px',
+                      lineHeight: '28px',
+                      textAlign: 'center',
+                      textTransform: 'capitalize',
+                      color: '#000000',
+                    }}
+                  >
+                    Preservar a sustentabilidade como estratégia de negócio. Manter a perspectiva contemporânea de trabalho: preservar e enfatizar a importância da saúde mental dentro do home office.
+                  </Typography>
+                </Stack>
+              </Stack>
+            </Stack>
+          </Section>
+
+          <Section>
+            <SectionTitle type='purple'>
+              Nossos benefícios
+            </SectionTitle>
+            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          </Section>
+          
+          <Section>
+            <SectionTitle type='green'>
+              Metodologia
+            </SectionTitle>
+            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          </Section>
+          
+          <Section>
+            <SectionTitle type='black'>
+              Artigos
+            </SectionTitle>
+            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          </Section>
+
+          <Section>
+            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          </Section>
+
+          <Section>
+            <SectionTitle type='red'>
+              Entre em contato
+            </SectionTitle>
+            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+          </Section>
 
         </Stack>
         
       </Container>
     
-      {/* <Divider />
+      <Divider />
 
       <Box 
         sx={{
@@ -249,7 +411,7 @@ export default function Home() {
           width: '100%',
           backgroundColor: 'blue',
         }}
-      /> */}
+      />
 
     </Box>
   );
