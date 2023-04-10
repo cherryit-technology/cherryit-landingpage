@@ -12,7 +12,12 @@ const Section: React.FC<ISection> = ({
     <Box
       component="section"
     >
-      <Stack gap={6}>
+      <Stack 
+        gap={6}
+        sx={{
+          mb: 6
+        }}
+      >
         {children}
       </Stack>
     </Box>

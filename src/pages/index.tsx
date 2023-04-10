@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AppBar, Box, Button, Container, Divider, Grid, Paper, Stack, Toolbar, Typography } from '@mui/material';
+import { AppBar, Box, Button, Container, Divider, Grid, Stack, Toolbar, Typography } from '@mui/material';
 import marcaCherryItBranca from '../assets/Marca_CherryIt_Branca_2.png'
 import transparentDellOptiPlex7400AllinOneMockup from '../assets/TransparentDellOptiPlex7400AllinOneMockup.png'
 import transparentiPhone14ProMockup from '../assets/TransparentiPhone14ProMockup.png'
@@ -250,15 +250,16 @@ export default function Home() {
                 >
                   A Cherry IT é uma software house que domina a utilização da tecnologia para facilitar a vida de empresas, criando soluções digitais que ajudam a posicionar parceiros como lideranças em seus segmentos. Em sua trajetória beneficiamos startups disruptivas, órgãos governamentais brasileiros e empresas de consultoria consolidadas.
                 </Typography>
-
                 <Stack
-                  component={Paper}
                   justifyContent="center"
                   alignItems="center"
                   gap={2}
                   p={6}
-                  borderRadius={10}
                   height="100%"
+                  sx={{
+                    borderRadius: '36px',
+                    boxShadow: 1,
+                  }}
                 >
                   <Box 
                     sx={{
@@ -316,15 +317,16 @@ export default function Home() {
                 >
                   A cerejeira é uma das árvores que frutificam no início da primavera, marcando o período das estações mais alegres, e, nas regiões mais frias, onde o inverno é rigoroso, traz uma simbologia de renovação da vida que ciclicamente se adapta e se renova ano após ano.
                 </Typography>
-
                 <Stack
-                  component={Paper}
                   justifyContent="center"
                   alignItems="center"
                   gap={2}
                   p={6}
-                  borderRadius={10}
                   height="100%"
+                  sx={{
+                    borderRadius: '36px',
+                    boxShadow: 1,
+                  }}
                 >
                   <Box 
                     sx={{
@@ -371,7 +373,240 @@ export default function Home() {
             <SectionTitle type='purple'>
               Nossos benefícios
             </SectionTitle>
-            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
+            <Stack
+              flexDirection="row"
+              gap={11}
+            >
+              
+              <Stack 
+                gap={1}
+                alignItems="center"
+                sx={{
+                  width: '100%',
+                  borderRadius: '36px',
+                  paddingLeft: '31px',
+                  paddingRight: '31px',
+                  paddingBottom: '30px',
+                  paddingTop: '40px',
+                  "&:hover": {
+                    borderBottom: "1px solid #7568FF",
+                    borderLeft: "1px solid #7568FF",
+                    borderRight: "1px solid #7568FF",
+                    boxShadow: 1,
+                  },
+                }}
+              >
+                <Box 
+                  sx={{
+                    height: '65px',
+                    width: '65px',
+                    backgroundColor: '#E7E4FF',
+                    mb: 3,
+                    borderRadius: 100,
+                  }}
+                />
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 500,
+                    fontSize: '18px',
+                    lineHeight: '24px',
+                    textAlign: 'center',
+                    color: '#1E1D4C',
+
+                  }}
+                >
+                  Aumento de produtividade e competitividade
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '149%',
+                    textAlign: 'center',
+                    color: '#5E6282',
+
+                  }}
+                >
+                  Soluções de software avançadas permitem que as empresas se tornem mais eficientes, lucrativas e atualizadas no mercado
+                </Typography>
+              </Stack>
+
+              <Stack 
+                gap={1}
+                alignItems="center"
+                sx={{
+                  width: '100%',
+                  borderRadius: '36px',
+                  paddingLeft: '31px',
+                  paddingRight: '31px',
+                  paddingBottom: '30px',
+                  paddingTop: '40px',
+                  "&:hover": {
+                    borderBottom: "1px solid #7568FF",
+                    borderLeft: "1px solid #7568FF",
+                    borderRight: "1px solid #7568FF",
+                    boxShadow: 1,
+                  },
+                }}
+              >
+                <Box 
+                  sx={{
+                    height: '65px',
+                    width: '65px',
+                    backgroundColor: '#E7E4FF',
+                    mb: 3,
+                    borderRadius: 100,
+                  }}
+                />
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 500,
+                    fontSize: '18px',
+                    lineHeight: '24px',
+                    textAlign: 'center',
+                    color: '#1E1D4C',
+
+                  }}
+                >
+                  Redução de custos
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '149%',
+                    textAlign: 'center',
+                    color: '#5E6282',
+
+                  }}
+                >
+                  Soluções de software avançadas permitem que as empresas se tornem mais eficientes, lucrativas e atualizadas nSoluções de software customizadas podem ajudar as empresas a economizar tempo e recursos, resultando em melhoria dos resultados operacionais através da redução de custoso mercado
+                </Typography>
+              </Stack>
+
+              <Stack
+                gap={1}
+                alignItems="center"
+                sx={{
+                  width: '100%',
+                  borderRadius: '36px',
+                  paddingLeft: '31px',
+                  paddingRight: '31px',
+                  paddingBottom: '30px',
+                  paddingTop: '40px',
+                  "&:hover": {
+                    borderBottom: "1px solid #7568FF",
+                    borderLeft: "1px solid #7568FF",
+                    borderRight: "1px solid #7568FF",
+                    boxShadow: 1,
+                  },
+                }}
+              >
+                <Box 
+                  sx={{
+                    height: '65px',
+                    width: '65px',
+                    backgroundColor: '#E7E4FF',
+                    mb: 3,
+                    borderRadius: 100,
+                  }}
+                />
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 500,
+                    fontSize: '18px',
+                    lineHeight: '24px',
+                    textAlign: 'center',
+                    color: '#1E1D4C',
+
+                  }}
+                >
+                  Melhoria da satisfação do cliente final
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '149%',
+                    textAlign: 'center',
+                    color: '#5E6282',
+
+                  }}
+                >
+                  Soluções de software personalizadas podem ajudar as empresas a atender às necessidades de seus clientes de forma mais eficaz, resultando em uma melhoria da satisfação do cliente.
+                </Typography>
+              </Stack>
+
+              <Stack 
+                gap={1}
+                alignItems="center"
+                sx={{
+                  width: '100%',
+                  borderRadius: '36px',
+                  paddingLeft: '31px',
+                  paddingRight: '31px',
+                  paddingBottom: '30px',
+                  paddingTop: '40px',
+                  "&:hover": {
+                    borderBottom: "1px solid #7568FF",
+                    borderLeft: "1px solid #7568FF",
+                    borderRight: "1px solid #7568FF",
+                    boxShadow: 1,
+                  },
+                }}
+              >
+                <Box 
+                  sx={{
+                    height: '65px',
+                    width: '65px',
+                    backgroundColor: '#E7E4FF',
+                    mb: 3,
+                    borderRadius: 100,
+                  }}
+                />
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 500,
+                    fontSize: '18px',
+                    lineHeight: '24px',
+                    textAlign: 'center',
+                    color: '#1E1D4C',
+
+                  }}
+                >
+                  Experiência comprovada
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: 'Red Hat Display',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '149%',
+                    textAlign: 'center',
+                    color: '#5E6282',
+
+                  }}
+                >
+                  Com anos de experiência no setor de desenvolvimento de software, a Cherry IT possui um histórico comprovado de entrega de projetos de sucesso.
+                </Typography>
+              </Stack>
+
+            </Stack>
           </Section>
           
           <Section>
