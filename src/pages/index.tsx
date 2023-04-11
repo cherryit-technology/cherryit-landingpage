@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { AppBar, Box, Button, Container, Divider, Grid, Stack, Toolbar, Typography } from '@mui/material';
 import marcaCherryItBranca from '../assets/Marca_CherryIt_Branca_2.png'
-import transparentDellOptiPlex7400AllinOneMockup from '../assets/TransparentDellOptiPlex7400AllinOneMockup.png'
+
 import pCMockup from '../assets/pc.png'
 import grafico from '../assets/grafico.png'
 import timeline from '../assets/timeline.png'
@@ -14,6 +14,13 @@ import Group44753 from '../assets/Group44753.png'
 import Group44754 from '../assets/Group44754.png'
 
 import Group8 from '../assets/Group8.png'
+
+import Marca_CherryIt_Preta from '../assets/Marca_CherryIt_Preta 1.png'
+
+
+import face from '../assets/face.png'
+import insta from '../assets/insta.png'
+import twitter from '../assets/twitter.png'
 
 
 import Image from 'next/image';
@@ -1150,13 +1157,119 @@ export default function Home() {
     
       <Divider />
 
-      <Box 
+      <Stack 
+        gap={6}
         sx={{
-          height: 200,
-          width: '100%',
-          backgroundColor: 'blue',
+          padding: '40px',
+          flexDirection: {
+            xs: 'column',
+            sm: 'column',
+            md: 'row',
+            lg: 'row',
+            xl: 'row',
+          },
+          justifyContent: 'space-around'  
         }}
-      />
+      >
+        <Stack>
+          <Image
+            src={Marca_CherryIt_Preta}
+            alt="Marca CherryIt Preta"
+            width={131}
+            height={44.18}
+          />
+          <Typography
+            sx={{
+              fontFamily: 'Red Hat Display',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              fontSize: '12px',
+              lineHeight: '20px',
+              color: '#1B1F1E',
+              mb: 3
+            }}
+          >
+            Tecnologia que semea sonhos
+          </Typography>
+          <Typography
+             sx={{
+              fontFamily: 'Red Hat Display',
+              fontStyle: 'normal',
+              fontWeight: 500,
+              fontSize: '12px',
+              lineHeight: '20px',
+              color: '#1B1F1E',
+            }}
+          >
+            All rights reserved@cherryit
+          </Typography>
+        </Stack>
+        
+        <Stack>
+          <Typography
+            sx={{
+              fontFamily: 'Red Hat Display',
+              fontStyle: 'normal',
+              fontWeight: 600,
+              fontSize: '16px',
+              lineHeight: '21px',
+              color: '#1B1F1E',
+              mb: 3
+            }}
+          >
+            Política
+          </Typography>
+          <Typography
+             sx={{
+              fontFamily: 'Red Hat Display',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              fontSize: '12px',
+              lineHeight: '16px',
+              color: '#1B1F1E',
+              mb: 3
+            }}
+          >
+            Política de segurança da informação
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: 'Red Hat Display',
+              fontStyle: 'normal',
+              fontWeight: 400,
+              fontSize: '12px',
+              lineHeight: '16px',
+              color: '#1B1F1E',
+            }}
+          >
+            Código de ética
+          </Typography>
+        </Stack>
+
+        <Stack
+          gap={1}
+          flexDirection="row"
+        >
+          <Image
+            src={face}
+            alt="Facebook"
+            width={41}
+            height={41}
+          />
+          <Image
+            src={insta}
+            alt="Instagram"
+            width={41}
+            height={41}
+          />
+          <Image
+            src={twitter}
+            alt="Twitter"
+            width={41}
+            height={41}
+          />
+        </Stack>
+      </Stack>
 
     </Box>
   );
