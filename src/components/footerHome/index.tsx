@@ -103,7 +103,7 @@ const FooterHome: React.FC = () => {
         flexDirection="row"
       >
         
-        <IconButton
+        {/* <IconButton
           sx={{
             height: 41,
             width: 41
@@ -115,7 +115,7 @@ const FooterHome: React.FC = () => {
             width={41}
             height={41}
           />
-        </IconButton>
+        </IconButton> */}
 
         <IconButton
            href="https://www.linkedin.com/company/cherryit/"
@@ -149,7 +149,7 @@ const FooterHome: React.FC = () => {
           />
         </IconButton>
         
-        <IconButton
+        {/* <IconButton
           sx={{
             height: 41,
             width: 41
@@ -161,7 +161,7 @@ const FooterHome: React.FC = () => {
             width={41}
             height={41}
           />
-        </IconButton>
+        </IconButton> */}
 
       </Stack>
 
