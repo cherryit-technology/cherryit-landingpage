@@ -1,10 +1,11 @@
-import { Stack, Typography } from '@mui/material'
+import { IconButton, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
 import * as React from 'react'
 import Marca_CherryIt_Preta from '../../assets/Marca_CherryIt_Preta 1.png'
-import face from '../../assets/face.png'
+// import face from '../../assets/face.png'
 import insta from '../../assets/insta.png'
-import twitter from '../../assets/twitter.png'
+// import twitter from '../../assets/twitter.png'
+import linkedin from '../../assets/linkedin.png'
 
 const FooterHome: React.FC = () => {
   return (
@@ -101,24 +102,49 @@ const FooterHome: React.FC = () => {
         gap={1}
         flexDirection="row"
       >
-        <Image
-          src={face}
-          alt="Facebook"
-          width={41}
-          height={41}
-        />
-        <Image
-          src={insta}
-          alt="Instagram"
-          width={41}
-          height={41}
-        />
-        <Image
-          src={twitter}
-          alt="Twitter"
-          width={41}
-          height={41}
-        />
+        
+        {/* <IconButton>
+          <Image
+            src={face}
+            alt="Facebook"
+            width={41}
+            height={41}
+          />
+        </IconButton> */}
+
+        <IconButton
+           href="https://www.linkedin.com/company/cherryit/"
+           target="_blank"
+        >
+          <Image
+            src={linkedin}
+            alt="linkedin"
+            width={41}
+            height={41}
+          />
+        </IconButton>
+        
+        <IconButton
+          href="https://www.instagram.com/cherryit.co/"
+          target="_blank"
+        >
+          <Image
+            src={insta}
+            alt="Instagram"
+            width={41}
+            height={41}
+          />
+        </IconButton>
+        
+        {/* <IconButton>
+          <Image
+            src={twitter}
+            alt="Twitter"
+            width={41}
+            height={41}
+          />
+        </IconButton> */}
+
       </Stack>
 
     </Stack>
