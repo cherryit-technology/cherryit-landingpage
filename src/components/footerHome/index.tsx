@@ -2,9 +2,9 @@ import { IconButton, Stack, Typography } from '@mui/material'
 import Image from 'next/image'
 import * as React from 'react'
 import Marca_CherryIt_Preta from '../../assets/Marca_CherryIt_Preta 1.png'
-// import face from '../../assets/face.png'
+import face from '../../assets/face.png'
 import insta from '../../assets/insta.png'
-// import twitter from '../../assets/twitter.png'
+import twitter from '../../assets/twitter.png'
 import linkedin from '../../assets/linkedin.png'
 
 const FooterHome: React.FC = () => {
@@ -103,18 +103,27 @@ const FooterHome: React.FC = () => {
         flexDirection="row"
       >
         
-        {/* <IconButton>
+        <IconButton
+          sx={{
+            height: 41,
+            width: 41
+          }}
+        >
           <Image
             src={face}
             alt="Facebook"
             width={41}
             height={41}
           />
-        </IconButton> */}
+        </IconButton>
 
         <IconButton
            href="https://www.linkedin.com/company/cherryit/"
            target="_blank"
+           sx={{
+            height: 41,
+            width: 41
+          }}
         >
           <Image
             src={linkedin}
@@ -127,6 +136,10 @@ const FooterHome: React.FC = () => {
         <IconButton
           href="https://www.instagram.com/cherryit.co/"
           target="_blank"
+          sx={{
+            height: 41,
+            width: 41
+          }}
         >
           <Image
             src={insta}
@@ -136,14 +149,19 @@ const FooterHome: React.FC = () => {
           />
         </IconButton>
         
-        {/* <IconButton>
+        <IconButton
+          sx={{
+            height: 41,
+            width: 41
+          }}
+        >
           <Image
             src={twitter}
             alt="Twitter"
             width={41}
             height={41}
           />
-        </IconButton> */}
+        </IconButton>
 
       </Stack>
 
