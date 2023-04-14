@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
           />
         </IconButton>
         
-        <IconButton
+        {/* <IconButton
           href="https://www.instagram.com/cherryit.co/"
           target="_blank"
           sx={{
@@ -147,7 +147,7 @@ const Footer: React.FC = () => {
             width={41}
             height={41}
           />
-        </IconButton>
+        </IconButton> */}
         
         {/* <IconButton
           sx={{

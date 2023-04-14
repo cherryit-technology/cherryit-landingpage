@@ -97,7 +97,7 @@ const Contact: React.FC<IContact> = () => {
             </Box>
           </Stack>
         </Stack>
-        <Divider orientation="vertical" />
+        {/* <Divider orientation="vertical" />
         <Stack flex={1}>
           <Stack flexDirection="row" gap={3} alignItems="center">
             <Image
@@ -135,7 +135,7 @@ const Contact: React.FC<IContact> = () => {
               </Typography>
             </Box>
           </Stack>
-        </Stack>
+        </Stack> */}
       </Stack>
       <Stack
         justifyContent="center"
