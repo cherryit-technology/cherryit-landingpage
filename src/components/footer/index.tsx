@@ -7,7 +7,7 @@ import insta from '../../assets/insta.png'
 import twitter from '../../assets/twitter.png'
 import linkedin from '../../assets/linkedin.png'
 
-const FooterHome: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <Stack
       gap={6}
@@ -169,4 +169,4 @@ const FooterHome: React.FC = () => {
   )
 }
 
-export { FooterHome }
+export { Footer }

@@ -93,7 +93,7 @@ const SectionTitle: React.FC<ISectionTitle> = ({
             sm: '200px',
             md: '212.5px',
             lg: '225px',
-            xl: '250px',
+            xl: '406px',
           },
           fontSize: {
             xs: '30px',

@@ -1,16 +1,19 @@
 import * as React from 'react';
 import { Box, Container, Divider, Stack } from '@mui/material';
-import { FooterHome } from '@/components/footerHome';
-import { NavHome } from '@/components/navHome';
+import { Footer } from '@/components/footer';
+import { Navbar } from '@/components/navbar';
 import { Main } from '@/components/main';
 import { AboutUs } from '@/components/aboutUs';
 import { OurBenefits } from '@/components/ourBenefits';
 import { Methodology } from '@/components/methodology';
+// import { Articles } from '@/components/articles';
+import { Testimonials } from '@/components/testimonials';
+import { Contact } from '@/components/contact';
 
 export default function Home() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <NavHome />
+      <Navbar />
       <Container
         sx={{ mt: 12, mb: 12 }}
         maxWidth='xl'
@@ -31,26 +34,16 @@ export default function Home() {
         >
           
           <AboutUs />
+
           <OurBenefits />
+          
           <Methodology />
       
-          {/* <Section>
-            <SectionTitle type='black'>
-              Artigos
-            </SectionTitle>
-            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          </Section> */}
+          {/* <Articles /> */}
 
-          {/* <Section>
-            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          </Section> */}
+          <Testimonials />
 
-          {/* <Section>
-            <SectionTitle type='red'>
-              Entre em contato
-            </SectionTitle>
-            <Box sx={{ height: 200, width: '100%', backgroundColor: 'blue' }}/>
-          </Section> */}
+          <Contact />
 
         </Stack>
         
@@ -58,7 +51,7 @@ export default function Home() {
     
       <Divider />
 
-      <FooterHome />
+      <Footer />
 
     </Box>
   );

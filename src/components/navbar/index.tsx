@@ -5,7 +5,7 @@ import marcaCherryItBranca from '../../assets/Marca_CherryIt_Branca_2.png'
 import { Menu } from './menu'
 import { MenuCollapse } from './menuCollapse'
 
-const NavHome: React.FC = () => {
+const Navbar: React.FC = () => {
   const upSm = useMediaQuery((theme: Theme) => theme.breakpoints.up('md'))
   return (
     <AppBar position="static">
@@ -27,4 +27,4 @@ const NavHome: React.FC = () => {
   )
 }
 
-export { NavHome }
+export { Navbar }

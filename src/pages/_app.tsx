@@ -4,7 +4,7 @@ import { AppProps } from 'next/app';
 import { CacheProvider, EmotionCache } from '@emotion/react';
 
 import createEmotionCache from '../createEmotionCache';
-import ProviderTheme from './contexts/theme';
+import ProviderTheme from '../contexts/theme';
 
 const clientSideEmotionCache = createEmotionCache();
 

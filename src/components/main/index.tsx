@@ -14,6 +14,13 @@ const Main: React.FC<IMain> = () => {
       <Grid item xs={12} sm={12} md={5} lg={5} xl={6}>
         <Typography
           sx={{
+            textAlign: {
+              xs: 'center',
+              sm: 'center',
+              md: 'left',
+              lg: 'left',
+              xl: 'left'
+            },
             fontFamily: 'Podkova',
             fontStyle: 'normal',
             fontWeight: 700,
@@ -44,6 +51,13 @@ const Main: React.FC<IMain> = () => {
             fontFamily: 'Podkova',
             fontStyle: 'normal',
             fontWeight: 700,
+            textAlign: {
+              xs: 'center',
+              sm: 'center',
+              md: 'left',
+              lg: 'left',
+              xl: 'left'
+            },
             fontSize: {
               xs: '26.4px',
               sm: '33.6px',
@@ -70,6 +84,13 @@ const Main: React.FC<IMain> = () => {
             fontFamily: 'Podkova',
             fontStyle: 'normal',
             fontWeight: 700,
+            textAlign: {
+              xs: 'center',
+              sm: 'center',
+              md: 'left',
+              lg: 'left',
+              xl: 'left'
+            },
             fontSize: {
               xs: '48.4px',
               sm: '61.6px',
@@ -95,47 +116,67 @@ const Main: React.FC<IMain> = () => {
       <Grid item xs={12} sm={12} md={7} lg={7} xl={6}>
           
         <Stack
+          flex={1}
           sx={{ 
-            position: "relative", 
-            right: {
-              xs: 35,
-              sm: 50,
-              md: 0,
-              lg: 0,
-              xl: 0,
-            },
-            height: {
-              xs: 256.28,
-              sm: 417.2,
-              md: 417.2,
-              lg: 536.4,
-              xl: 596,
-            },
-            width: {
-              xs: 317.34,
-              sm: 516.6,
-              md: 516.6,
-              lg: 664.2,
-              xl: 738,
+            alignItems: {
+              xs: 'center',
+              sm: 'center',
+              md: 'flex-start',
+              lg: 'flex-start',
+              xl: 'flex-start'
             }
           }}
         >
-          <Image 
-            src={pCMockup}
-            alt="pCMockup"
-            fill
-            style={{
-              objectFit: 'contain'
+          <Box
+            sx={{ 
+              position: "relative", 
+              right: {
+                xs: 0,
+                sm: 0,
+                md: 0,
+                lg: 0,
+                xl: 0,
+              },
+              height: {
+                xs: 256.28,
+                sm: 417.2,
+                md: 417.2,
+                lg: 536.4,
+                xl: 596,
+              },
+              width: {
+                xs: 317.34,
+                sm: 516.6,
+                md: 516.6,
+                lg: 664.2,
+                xl: 738,
+              }
             }}
-          />
+          >
+            <Image 
+              src={pCMockup}
+              alt="pCMockup"
+              fill
+              style={{
+                objectFit: 'contain'
+              }}
+            />
+          </Box>
         </Stack>
 
       </Grid>
 
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-        <Box
+        <Stack
           sx={{
             position: 'relative',
+            alignItems: {
+              xs: 'center',
+              sm: 'center',
+              md: 'flex-start',
+              lg: 'flex-start',
+              xl: 'flex-start'
+            },
             top: {
               xs: 0,
               sm: 0,
@@ -147,6 +188,13 @@ const Main: React.FC<IMain> = () => {
         >
           <Typography
             sx={{
+              textAlign: {
+                xs: 'center',
+                sm: 'center',
+                md: 'left',
+                lg: 'left',
+                xl: 'left'
+              },
               marginBottom: '70px',
               fontFamily: 'Podkova',
               fontStyle: 'normal',
@@ -226,7 +274,7 @@ const Main: React.FC<IMain> = () => {
               Play video
             </Button>
           </Stack>
-        </Box>
+        </Stack>
       </Grid>
 
     </Grid>
