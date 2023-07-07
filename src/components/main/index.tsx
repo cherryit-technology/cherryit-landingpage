@@ -205,7 +205,7 @@ const Main: React.FC<IMain> = () => {
               maxWidth: '418px',
             }}
           >
-            Maximize seu potencial com soluções de software exclusivas, para empresas que buscam inovação e eficiência
+            Somos um grupo de gerentes de produto, designers, engenheiros de software e entusiastas de tecnologia, dedicados a impulsionar a fronteira do possível no mundo digital.
           </Typography>
           <Stack
             gap={3}
