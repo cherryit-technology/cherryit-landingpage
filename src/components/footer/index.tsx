@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
             mb: 3
           }}
         >
-          Tecnologia que semea sonhos
+          Tecnologia que transforma a vida
         </Typography>
         <Typography
             sx={{

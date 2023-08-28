@@ -44,7 +44,7 @@ const Main: React.FC<IMain> = () => {
             marginBottom: '7px'
           }}
         >
-          Tecnologia
+          criamos
         </Typography>
         <Typography
           sx={{
@@ -77,7 +77,7 @@ const Main: React.FC<IMain> = () => {
             marginBottom: '7px'
           }}
         >
-          que transforma
+          o software que você
         </Typography>
         <Typography
           sx={{
@@ -109,7 +109,7 @@ const Main: React.FC<IMain> = () => {
             color: '#EF4230',
           }}
         >
-          a vida
+          precisa
         </Typography>
       </Grid>
 
