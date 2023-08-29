@@ -205,7 +205,7 @@ const Main: React.FC<IMain> = () => {
               maxWidth: '418px',
             }}
           >
-            Somos um grupo de gerentes de produto, designers, engenheiros de software e entusiastas de tecnologia, dedicados a impulsionar a fronteira do possível no mundo digital.
+            Somos uma equipe de designers e desenvolvedores com um único objetivo: cuidar de todos os detalhes enquanto você se mantém focado em conduzir a mudança dentro da sua organização.
           </Typography>
           <Stack
             gap={3}
@@ -254,7 +254,7 @@ const Main: React.FC<IMain> = () => {
                 color: '#FFFFFF',
               }}
             >
-              Como podemos ajudar?
+              Fale com um especialista
             </Button>
             <Button
               startIcon={<PlayCircle sx={{ fontSize: '52px !important', color: "#B51D22" }} />}
