@@ -45,6 +45,9 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
         </script> 
          */}
 
+        <!-- Start of HubSpot Embed Code -->
+        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40071122.js"></script>
+        <!-- End of HubSpot Embed Code -->
       </body>
     </Html>
   );
