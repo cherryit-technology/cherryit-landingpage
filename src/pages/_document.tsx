@@ -46,6 +46,16 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
          */}
 
         <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/40071122.js"></script>
+
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+        <script>
+          hbspt.forms.create({
+            region: "na1",
+            portalId: "40071122",
+            formId: "9b5bc9e3-a5e5-4d5a-8a39-8c8e05f68ed4"
+          });
+        </script>
+
       </body>
     </Html>
   );
