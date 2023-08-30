@@ -1,10 +1,10 @@
-import * as React from 'react';
-import Head from 'next/head';
-import { AppProps } from 'next/app';
-import { CacheProvider, EmotionCache } from '@emotion/react';
+import * as React from "react";
+import Head from "next/head";
+import { AppProps } from "next/app";
+import { CacheProvider, EmotionCache } from "@emotion/react";
 
-import createEmotionCache from '../createEmotionCache';
-import ProviderTheme from '../contexts/theme';
+import createEmotionCache from "../createEmotionCache";
+import ProviderTheme from "../contexts/theme";
 
 const clientSideEmotionCache = createEmotionCache();
 

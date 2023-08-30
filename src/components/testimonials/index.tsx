@@ -1,28 +1,24 @@
-import * as React from 'react'
-import { Section } from '../section'
-import { Box, Grid, Stack, Typography } from '@mui/material'
-import { SectionTitle } from '../sectionTitle'
-import IframeResizer from 'iframe-resizer-react'
+import * as React from "react";
+import { Section } from "../section";
+import { Box, Grid, Stack, Typography } from "@mui/material";
+import { SectionTitle } from "../sectionTitle";
+import IframeResizer from "iframe-resizer-react";
 
-interface ITestimonials {
-
-}
+interface ITestimonials {}
 
 const Testimonials: React.FC<ITestimonials> = () => {
   return (
     <Section>
-      <SectionTitle type='purple'>
-        O que as pessoas falam de nós
-      </SectionTitle>
-      <IframeResizer 
+      <SectionTitle type="purple">O que as pessoas falam de nós</SectionTitle>
+      <IframeResizer
         id="testimonialto-carousel-all-cherry-it-tag-all-light"
-        src="https://embed-v2.testimonial.to/carousel/all/cherry-it?theme=light&autoplay=on&showmore=on&one-row=on&hideDate=on&same-height=on&tag=all" 
-        style={{ 
+        src="https://embed-v2.testimonial.to/carousel/all/cherry-it?theme=light&autoplay=on&showmore=on&one-row=on&hideDate=on&same-height=on&tag=all"
+        style={{
           height: 400,
           borderWidth: 0,
-          width: "1px", 
-          minWidth: "100%" 
-        }} 
+          width: "1px",
+          minWidth: "100%",
+        }}
       />
       {/* <Grid container spacing={6}>
         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -79,7 +75,7 @@ const Testimonials: React.FC<ITestimonials> = () => {
         </Grid>
       </Grid> */}
     </Section>
-  )
-}
+  );
+};
 
-export { Testimonials }
+export { Testimonials };

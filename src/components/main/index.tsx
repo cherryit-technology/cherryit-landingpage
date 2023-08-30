@@ -1,12 +1,11 @@
-import { PlayCircle } from '@mui/icons-material'
-import { Box, Button, Grid, Stack, Typography } from '@mui/material'
-import Image from 'next/image'
-import * as React from 'react'
-import pCMockup from '../../assets/pc.png'
+import { PlayCircle } from "@mui/icons-material";
+import { Box, Button, Grid, Stack, Typography } from "@mui/material";
+import Image from "next/image";
+import * as React from "react";
+import pCMockup from "../../assets/pc.png";
+import { Link } from "../link";
 
-interface IMain {
-
-}
+interface IMain {}
 
 const Main: React.FC<IMain> = () => {
   return (
@@ -15,98 +14,98 @@ const Main: React.FC<IMain> = () => {
         <Typography
           sx={{
             textAlign: {
-              xs: 'center',
-              sm: 'center',
-              md: 'left',
-              lg: 'left',
-              xl: 'left'
+              xs: "center",
+              sm: "center",
+              md: "left",
+              lg: "left",
+              xl: "left",
             },
-            fontFamily: 'Podkova',
-            fontStyle: 'normal',
+            fontFamily: "Podkova",
+            fontStyle: "normal",
             fontWeight: 700,
             fontSize: {
-              xs: '48.4px',
-              sm: '61.6px',
-              md: '70.4px',
-              lg: '79.2px',
-              xl: '88px',
+              xs: "48.4px",
+              sm: "61.6px",
+              md: "70.4px",
+              lg: "79.2px",
+              xl: "88px",
             },
             lineHeight: {
-              xs: '48.4px',
-              sm: '61.6px',
-              md: '70.4px',
-              lg: '79.2px',
-              xl: '88px',
+              xs: "48.4px",
+              sm: "61.6px",
+              md: "70.4px",
+              lg: "79.2px",
+              xl: "88px",
             },
-            letterSpacing: '-0.04em',
-            textTransform: 'uppercase',
-            color: '#1B1F1E',
-            marginBottom: '7px'
+            letterSpacing: "-0.04em",
+            textTransform: "uppercase",
+            color: "#1B1F1E",
+            marginBottom: "7px",
           }}
         >
           criamos
         </Typography>
         <Typography
           sx={{
-            fontFamily: 'Podkova',
-            fontStyle: 'normal',
+            fontFamily: "Podkova",
+            fontStyle: "normal",
             fontWeight: 700,
             textAlign: {
-              xs: 'center',
-              sm: 'center',
-              md: 'left',
-              lg: 'left',
-              xl: 'left'
+              xs: "center",
+              sm: "center",
+              md: "left",
+              lg: "left",
+              xl: "left",
             },
             fontSize: {
-              xs: '26.4px',
-              sm: '33.6px',
-              md: '38.4px',
-              lg: '43.2px',
-              xl: '48px',
+              xs: "26.4px",
+              sm: "33.6px",
+              md: "38.4px",
+              lg: "43.2px",
+              xl: "48px",
             },
             lineHeight: {
-              xs: '26.4px',
-              sm: '33.6px',
-              md: '38.4px',
-              lg: '43.2px',
-              xl: '48px',
+              xs: "26.4px",
+              sm: "33.6px",
+              md: "38.4px",
+              lg: "43.2px",
+              xl: "48px",
             },
-            textTransform: 'uppercase',
-            color: '#1B1F1E',
-            marginBottom: '7px'
+            textTransform: "uppercase",
+            color: "#1B1F1E",
+            marginBottom: "7px",
           }}
         >
           o software que você
         </Typography>
         <Typography
           sx={{
-            fontFamily: 'Podkova',
-            fontStyle: 'normal',
+            fontFamily: "Podkova",
+            fontStyle: "normal",
             fontWeight: 700,
             textAlign: {
-              xs: 'center',
-              sm: 'center',
-              md: 'left',
-              lg: 'left',
-              xl: 'left'
+              xs: "center",
+              sm: "center",
+              md: "left",
+              lg: "left",
+              xl: "left",
             },
             fontSize: {
-              xs: '48.4px',
-              sm: '61.6px',
-              md: '70.4px',
-              lg: '79.2px',
-              xl: '88px',
+              xs: "48.4px",
+              sm: "61.6px",
+              md: "70.4px",
+              lg: "79.2px",
+              xl: "88px",
             },
             lineHeight: {
-              xs: '48.4px',
-              sm: '61.6px',
-              md: '70.4px',
-              lg: '79.2px',
-              xl: '88px',
+              xs: "48.4px",
+              sm: "61.6px",
+              md: "70.4px",
+              lg: "79.2px",
+              xl: "88px",
             },
-            textTransform: 'uppercase',
-            color: '#EF4230',
+            textTransform: "uppercase",
+            color: "#EF4230",
           }}
         >
           precisa
@@ -114,22 +113,21 @@ const Main: React.FC<IMain> = () => {
       </Grid>
 
       <Grid item xs={12} sm={12} md={7} lg={7} xl={6}>
-          
         <Stack
           flex={1}
-          sx={{ 
+          sx={{
             alignItems: {
-              xs: 'center',
-              sm: 'center',
-              md: 'flex-start',
-              lg: 'flex-start',
-              xl: 'flex-start'
-            }
+              xs: "center",
+              sm: "center",
+              md: "flex-start",
+              lg: "flex-start",
+              xl: "flex-start",
+            },
           }}
         >
           <Box
-            sx={{ 
-              position: "relative", 
+            sx={{
+              position: "relative",
               right: {
                 xs: 0,
                 sm: 0,
@@ -150,62 +148,63 @@ const Main: React.FC<IMain> = () => {
                 md: 516.6,
                 lg: 664.2,
                 xl: 738,
-              }
+              },
             }}
           >
-            <Image 
+            <Image
               src={pCMockup}
               alt="pCMockup"
               fill
               style={{
-                objectFit: 'contain'
+                objectFit: "contain",
               }}
             />
           </Box>
         </Stack>
-
       </Grid>
 
       <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <Stack
           sx={{
-            position: 'relative',
+            position: "relative",
             alignItems: {
-              xs: 'center',
-              sm: 'center',
-              md: 'flex-start',
-              lg: 'flex-start',
-              xl: 'flex-start'
+              xs: "center",
+              sm: "center",
+              md: "flex-start",
+              lg: "flex-start",
+              xl: "flex-start",
             },
             top: {
               xs: 0,
               sm: 0,
-              md: '-220px',
-              lg: '-320px',
-              xl: '-360px'
-            }
+              md: "-220px",
+              lg: "-320px",
+              xl: "-360px",
+            },
           }}
         >
           <Typography
             sx={{
               textAlign: {
-                xs: 'center',
-                sm: 'center',
-                md: 'left',
-                lg: 'left',
-                xl: 'left'
+                xs: "center",
+                sm: "center",
+                md: "left",
+                lg: "left",
+                xl: "left",
               },
-              marginBottom: '70px',
-              fontFamily: 'Podkova',
-              fontStyle: 'normal',
+              marginBottom: "70px",
+              fontFamily: "Podkova",
+              fontStyle: "normal",
               fontWeight: 400,
-              fontSize: '20px',
-              lineHeight: '149%',
-              color: '#1B1F1E',
-              maxWidth: '418px',
+              fontSize: "20px",
+              lineHeight: "149%",
+              color: "#1B1F1E",
+              maxWidth: "418px",
             }}
           >
-            Somos uma equipe de designers e desenvolvedores com um único objetivo: cuidar de todos os detalhes enquanto você se mantém focado em conduzir a mudança dentro da sua organização.
+            Somos uma equipe de designers e desenvolvedores com um único
+            objetivo: cuidar de todos os detalhes enquanto você se mantém focado
+            em conduzir a mudança dentro da sua organização.
           </Typography>
           <Stack
             gap={3}
@@ -236,39 +235,43 @@ const Main: React.FC<IMain> = () => {
             <Button
               variant="contained"
               sx={{
-                '&:hover': {
-                  color: '#FFFFFF',
-                  backgroundColor: '#48E49B',
+                "&:hover": {
+                  color: "#FFFFFF",
+                  backgroundColor: "#48E49B",
                 },
-                background: '#48E49B',
-                border: '2px solid #48E49B',
-                boxShadow: '2px 3px 15px rgba(0, 0, 0, 0.17)',
-                borderRadius: '10px',
+                background: "#48E49B",
+                border: "2px solid #48E49B",
+                boxShadow: "2px 3px 15px rgba(0, 0, 0, 0.17)",
+                borderRadius: "10px",
 
-                fontFamily: 'Red Hat Display',
-                fontStyle: 'normal',
+                fontFamily: "Red Hat Display",
+                fontStyle: "normal",
                 fontWeight: 600,
-                fontSize: '18px',
-                lineHeight: '149%',
-                letterSpacing: '0.02em',
-                color: '#FFFFFF',
+                fontSize: "18px",
+                lineHeight: "149%",
+                letterSpacing: "0.02em",
+                color: "#FFFFFF",
               }}
             >
-              Fale com um especialista
+              <Link href="#contato">Fale com um especialista</Link>
             </Button>
+
             <Button
-              startIcon={<PlayCircle sx={{ fontSize: '52px !important', color: "#B51D22" }} />}
+              startIcon={
+                <PlayCircle
+                  sx={{ fontSize: "52px !important", color: "#B51D22" }}
+                />
+              }
               sx={{
-                fontFamily: 'Red Hat Display',
-                fontStyle: 'normal',
+                fontFamily: "Red Hat Display",
+                fontStyle: "normal",
                 fontWeight: 500,
-                fontSize: '17px',
-                lineHeight: '22px',
-                color: '#686D77',
-                textTransform: 'none',
+                fontSize: "17px",
+                lineHeight: "22px",
+                color: "#686D77",
+                textTransform: "none",
 
-                display: 'none',
-
+                display: "none",
               }}
             >
               Play video
@@ -276,9 +279,8 @@ const Main: React.FC<IMain> = () => {
           </Stack>
         </Stack>
       </Grid>
-
     </Grid>
-  )
-}
+  );
+};
 
-export { Main }
+export { Main };
