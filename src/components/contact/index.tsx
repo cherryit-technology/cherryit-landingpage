@@ -174,7 +174,7 @@ const Contact: React.FC<IContact> = () => {
                 color: "#160637",
               }}
             >
-              Fale conosco
+              AGENDE UMA REUNIÃO
             </Typography>
           </Stack>
 
