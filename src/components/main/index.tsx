@@ -3,11 +3,15 @@ import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import * as React from "react";
 import pCMockup from "../../assets/pc.png";
-import { Link } from "../link";
 
 interface IMain {}
 
 const Main: React.FC<IMain> = () => {
+  const scrollToInfo = React.useCallback(() => {
+    const sectionElement = document.getElementById("contato");
+    sectionElement?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} sm={12} md={5} lg={5} xl={6}>
@@ -234,6 +238,7 @@ const Main: React.FC<IMain> = () => {
           >
             <Button
               variant="contained"
+              onClick={() => scrollToInfo()}
               sx={{
                 "&:hover": {
                   color: "#FFFFFF",
@@ -243,7 +248,6 @@ const Main: React.FC<IMain> = () => {
                 border: "2px solid #48E49B",
                 boxShadow: "2px 3px 15px rgba(0, 0, 0, 0.17)",
                 borderRadius: "10px",
-
                 fontFamily: "Red Hat Display",
                 fontStyle: "normal",
                 fontWeight: 600,
@@ -253,7 +257,7 @@ const Main: React.FC<IMain> = () => {
                 color: "#FFFFFF",
               }}
             >
-              <Link href="#contato">Fale com um especialista</Link>
+              Fale com um especialista
             </Button>
 
             <Button

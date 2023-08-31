@@ -14,9 +14,9 @@ import {
 import Group44780 from "../../assets/Group44780.png";
 import Group44782 from "../../assets/Group44782.png";
 import Group44781 from "../../assets/Group44781.png";
-
 import Image from "next/image";
 import { ContactForm } from "../contactForm";
+import Link from "next/link";
 
 interface IContact {}
 
@@ -48,19 +48,26 @@ const Contact: React.FC<IContact> = () => {
               >
                 Telefone
               </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Red Hat Display",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  fontSize: "24px",
-                  lineHeight: "32px",
-                  letterSpacing: "0.07em",
-                  color: "#160637",
-                }}
+
+              <Link
+                href="https://web.whatsapp.com/send?phone=5531993539173"
+                target="_blank"
+                style={{ textDecoration: "none", color: "white" }}
               >
-                55 31 993539173
-              </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Red Hat Display",
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    fontSize: "24px",
+                    lineHeight: "32px",
+                    letterSpacing: "0.07em",
+                    color: "#160637",
+                  }}
+                >
+                  55 31 993539173
+                </Typography>
+              </Link>
             </Box>
           </Stack>
         </Stack>
@@ -82,19 +89,25 @@ const Contact: React.FC<IContact> = () => {
               >
                 Email
               </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Red Hat Display",
-                  fontStyle: "normal",
-                  fontWeight: 500,
-                  fontSize: "24px",
-                  lineHeight: "32px",
-                  letterSpacing: "0.07em",
-                  color: "#160637",
-                }}
+
+              <Link
+                href="mailto:contato@cherryit.co"
+                style={{ textDecoration: "none", color: "white" }}
               >
-                contato@cherryit.co
-              </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Red Hat Display",
+                    fontStyle: "normal",
+                    fontWeight: 500,
+                    fontSize: "24px",
+                    lineHeight: "32px",
+                    letterSpacing: "0.07em",
+                    color: "#160637",
+                  }}
+                >
+                  contato@cherryit.co
+                </Typography>
+              </Link>
             </Box>
           </Stack>
         </Stack>

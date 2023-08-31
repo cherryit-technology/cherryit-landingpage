@@ -1,10 +1,8 @@
-import { Menu } from '@mui/icons-material'
-import { Box, IconButton, MenuItem, Menu as MuiMenu } from '@mui/material'
-import * as React from 'react'
+import { Menu } from "@mui/icons-material";
+import { Box, IconButton, MenuItem, Menu as MuiMenu } from "@mui/material";
+import * as React from "react";
 
-interface IMenuCollapse {
-
-}
+interface IMenuCollapse {}
 
 const MenuCollapse: React.FC<IMenuCollapse> = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -17,14 +15,14 @@ const MenuCollapse: React.FC<IMenuCollapse> = () => {
   };
 
   return (
-    <Box sx={{ position: 'relative' }}>
-      <IconButton 
+    <Box sx={{ position: "relative" }}>
+      <IconButton
         onClick={handleClick}
         id="menu-button"
         color="inherit"
-        aria-controls={open ? 'menu-menu' : undefined}
+        aria-controls={open ? "menu-menu" : undefined}
         aria-haspopup="true"
-        aria-expanded={open ? 'true' : undefined}
+        aria-expanded={open ? "true" : undefined}
       >
         <Menu />
       </IconButton>
@@ -34,18 +32,18 @@ const MenuCollapse: React.FC<IMenuCollapse> = () => {
         id="basic-menu"
         anchorEl={anchorEl}
         MenuListProps={{
-          'aria-labelledby': 'basic-button',
+          "aria-labelledby": "basic-button",
         }}
         sx={{
-          right: 10
+          right: 10,
         }}
         anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right',
+          vertical: "bottom",
+          horizontal: "right",
         }}
         transformOrigin={{
-          vertical: 'top',
-          horizontal: 'left',
+          vertical: "top",
+          horizontal: "left",
         }}
       >
         <MenuItem>Início</MenuItem>
@@ -54,7 +52,7 @@ const MenuCollapse: React.FC<IMenuCollapse> = () => {
         <MenuItem>Sobre nós</MenuItem>
       </MuiMenu>
     </Box>
-  )
-}
+  );
+};
 
-export { MenuCollapse }
+export { MenuCollapse };

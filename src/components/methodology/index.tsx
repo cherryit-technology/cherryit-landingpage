@@ -6,11 +6,14 @@ import Image from "next/image";
 import { ChevronRight } from "@mui/icons-material";
 import grafico from "../../assets/grafico.png";
 import Group8 from "../../assets/Group8.png";
-import { Link } from "../link";
 
 interface IMethodology {}
 
 const Methodology: React.FC<IMethodology> = () => {
+  const scrollToInfo = React.useCallback(() => {
+    const sectionElement = document.getElementById("contato");
+    sectionElement?.scrollIntoView({ behavior: "smooth" });
+  }, []);
   return (
     <Section>
       <SectionTitle type="green">Metodologia</SectionTitle>
@@ -305,6 +308,7 @@ const Methodology: React.FC<IMethodology> = () => {
           <Button
             endIcon={<ChevronRight />}
             variant="contained"
+            onClick={() => scrollToInfo()}
             sx={{
               "&:hover": {
                 background: "#7568FF",
@@ -331,7 +335,7 @@ const Methodology: React.FC<IMethodology> = () => {
               color: "#FFFFFF",
             }}
           >
-            <Link href="#contato">Fale com um especialista de soluções</Link>
+            Fale com um especialista de soluções
           </Button>
         </Grid>
       </Grid>
