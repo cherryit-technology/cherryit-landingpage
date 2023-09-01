@@ -2,9 +2,7 @@ import { Menu } from "@mui/icons-material";
 import { Box, IconButton, MenuItem, Menu as MuiMenu } from "@mui/material";
 import * as React from "react";
 
-interface IMenuCollapse {}
-
-const MenuCollapse: React.FC<IMenuCollapse> = () => {
+const MenuCollapse: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {

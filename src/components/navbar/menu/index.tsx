@@ -1,9 +1,13 @@
 import { Box, Button, Stack } from "@mui/material";
 import * as React from "react";
+import { useRouter } from "next/router";
 
-interface IMenu {}
+interface IMenu {
+  isHome?: any;
+}
 
-const Menu: React.FC<IMenu> = () => {
+const Menu: React.FC<IMenu> = ({ isHome }) => {
+  const router = useRouter();
   const scrollToInfo = React.useCallback(() => {
     const sectionElement = document.getElementById("contato");
     sectionElement?.scrollIntoView({ behavior: "smooth" });
@@ -12,7 +16,9 @@ const Menu: React.FC<IMenu> = () => {
     <Stack flexDirection="row" alignItems="center" gap={3}>
       <Button
         variant="contained"
-        onClick={() => scrollToInfo()}
+        onClick={() =>
+          isHome === false ? router.push("/#contato") : scrollToInfo()
+        }
         sx={{
           "&:hover": {
             background: "#7568FF",

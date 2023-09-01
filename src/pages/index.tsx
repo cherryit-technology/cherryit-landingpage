@@ -6,14 +6,14 @@ import { Main } from "@/components/main";
 import { AboutUs } from "@/components/aboutUs";
 import { OurBenefits } from "@/components/ourBenefits";
 import { Methodology } from "@/components/methodology";
-// import { Articles } from '@/components/articles';
 import { Testimonials } from "@/components/testimonials";
 import { Contact } from "@/components/contact";
+import { Articles } from "@/components/articles";
 
 export default function Home() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Navbar />
+      <Navbar isHome={true} />
       <Container sx={{ mt: 12, mb: 12 }} maxWidth="xl">
         <Main />
         <Stack
@@ -35,7 +35,7 @@ export default function Home() {
 
           <Methodology />
 
-          {/* <Articles /> */}
+          <Articles />
 
           <Testimonials />
 
