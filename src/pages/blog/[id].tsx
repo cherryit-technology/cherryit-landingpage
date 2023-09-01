@@ -124,7 +124,7 @@ const Blog: NextPage<IArticles> = ({ article }) => {
 
 export default Blog;
 
-export const getServerSideProps = async (ctx: any, auth: any) => {
+export const getStaticProps = async (ctx: any, auth: any) => {
   const { query } = ctx;
   const article = query.id;
 
