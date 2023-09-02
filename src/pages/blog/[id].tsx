@@ -4,18 +4,22 @@ import { Section } from "@/components/section";
 import { PreviewHtml } from "@cherryit/components";
 import { Box, Container, Divider, Stack, Typography } from "@mui/material";
 import * as React from "react";
-import { useRouter } from "next/router";
 import blog from "../../../blog.json";
 
-const Blog = () => {
-  const router = useRouter();
+interface IArticles {
+  article: any;
+}
+
+const Blog = ({ article }: IArticles) => {
   const [selectedArticle, setSelectedArticle] = React.useState<any>([]);
-  const { id } = router.query;
 
   React.useEffect(() => {
-    const artigo = blog.artigos.filter((art: any, index: any) => index == id);
+    const artigo = blog.artigos.filter(
+      (art: any, index: any) => index == article
+    );
     setSelectedArticle(artigo);
-  }, [id]);
+    console.log(artigo, "blog");
+  }, [article]);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Navbar isHome={false} />
@@ -118,3 +122,14 @@ const Blog = () => {
 };
 
 export default Blog;
+
+export const getServerSideProps = async (ctx: any, auth: any) => {
+  const { query } = ctx;
+  const article = query.id;
+
+  return {
+    props: {
+      article,
+    },
+  };
+};
