@@ -26,8 +26,29 @@ const Contact: React.FC<IContact> = () => {
       <SectionTitle type="red">Entre em contato</SectionTitle>
       <Stack
         id="contato"
-        flexDirection="row"
-        sx={{ height: "84px" }}
+        sx={{
+          height: {
+            xs: "auto",
+            sm: "auto",
+            md: "auto",
+            lg: "84px",
+            xl: "84px",
+          },
+          flexDirection: {
+            xs: "column",
+            sm: "column",
+            md: "row",
+            lg: "row",
+            xl: "row",
+          },
+          alignItems: {
+            xs: "flex-start",
+            sm: "center",
+            md: "center",
+            lg: "center",
+            xl: "center",
+          },
+        }}
         gap={6}
         mt={6}
       >

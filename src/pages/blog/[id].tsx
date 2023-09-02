@@ -29,8 +29,9 @@ const Blog = ({ article }: IArticles) => {
               <Box
                 sx={{
                   width: "100%",
-                  height: "400px",
+                  height: "450px",
                   backgroundImage: `url(${art.imagem})`,
+                  backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               />

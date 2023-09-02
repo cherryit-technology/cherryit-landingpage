@@ -33,13 +33,25 @@ const ArticleCard: React.FC<IArticleCard> = ({
   content,
 }) => {
   return (
-    <Stack gap={3} sx={{ maxWidth: "371px" }}>
+    <Stack
+      gap={3}
+      sx={{
+        /* maxWidth: "371px", */
+        maxWidth: {
+          xs: "100%",
+          sm: "100%",
+          md: "371px",
+          lg: "371px",
+          xl: "371px",
+        },
+      }}
+    >
       <Box
         sx={{
           width: "100%",
           height: "248px",
           backgroundImage: `url(${image})`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       />
