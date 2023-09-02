@@ -18,7 +18,6 @@ const Blog = ({ article }: IArticles) => {
       (art: any, index: any) => index == article
     );
     setSelectedArticle(artigo);
-    console.log(artigo, "blog");
   }, [article]);
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -121,15 +120,26 @@ const Blog = ({ article }: IArticles) => {
   );
 };
 
-export default Blog;
-
-export const getServerSideProps = async (ctx: any, auth: any) => {
-  const { query } = ctx;
-  const article = query.id;
+export async function getStaticProps({ params }: any) {
+  const { id } = params;
+  const article = id;
 
   return {
     props: {
       article,
     },
   };
-};
+}
+
+export async function getStaticPaths() {
+  const paths = blog.artigos.map((artigo: any, index: number) => ({
+    params: { id: index.toString() },
+  }));
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export default Blog;
