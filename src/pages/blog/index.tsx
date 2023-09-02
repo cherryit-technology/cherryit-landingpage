@@ -14,7 +14,6 @@ export default function Blog() {
   React.useEffect(() => {
     const latestArticles = blog.artigos.slice(-3);
     setArticles(latestArticles);
-    console.log(latestArticles, "blog");
   }, []);
   return (
     <Box sx={{ flexGrow: 1 }}>

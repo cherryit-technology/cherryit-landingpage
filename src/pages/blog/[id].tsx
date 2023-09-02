@@ -3,24 +3,19 @@ import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/section";
 import { PreviewHtml } from "@cherryit/components";
 import { Box, Container, Divider, Stack, Typography } from "@mui/material";
-import { NextPage } from "next";
 import * as React from "react";
+import { useRouter } from "next/router";
 import blog from "../../../blog.json";
 
-interface IArticles {
-  article: any;
-}
-
-const Blog: NextPage<IArticles> = ({ article }) => {
+const Blog = () => {
+  const router = useRouter();
   const [selectedArticle, setSelectedArticle] = React.useState<any>([]);
+  const { id } = router.query;
 
   React.useEffect(() => {
-    const artigo = blog.artigos.filter(
-      (art: any, index: any) => index == article
-    );
+    const artigo = blog.artigos.filter((art: any, index: any) => index == id);
     setSelectedArticle(artigo);
-    console.log(artigo, "blog");
-  }, [article]);
+  }, [id]);
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Navbar isHome={false} />
@@ -123,14 +118,3 @@ const Blog: NextPage<IArticles> = ({ article }) => {
 };
 
 export default Blog;
-
-export const getStaticProps = async (ctx: any, auth: any) => {
-  const { query } = ctx;
-  const article = query.id;
-
-  return {
-    props: {
-      article,
-    },
-  };
-};
