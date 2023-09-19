@@ -2,7 +2,8 @@ import { PlayCircle } from "@mui/icons-material";
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import * as React from "react";
-import pCMockup from "../../assets/pc.png";
+import pCMockup from "../../assets/pc-home.png";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 interface IMain {}
 
@@ -12,13 +13,15 @@ const Main: React.FC<IMain> = () => {
     sectionElement?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
+  const matches = useMediaQuery("(min-width:899px)");
+
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} sm={12} md={5} lg={5} xl={6}>
         <Typography
           sx={{
             textAlign: {
-              xs: "center",
+              xs: "left",
               sm: "center",
               md: "left",
               lg: "left",
@@ -47,7 +50,7 @@ const Main: React.FC<IMain> = () => {
             marginBottom: "7px",
           }}
         >
-          criamos
+          {matches ? "criamos" : "tecnologia"}
         </Typography>
         <Typography
           sx={{
@@ -55,7 +58,7 @@ const Main: React.FC<IMain> = () => {
             fontStyle: "normal",
             fontWeight: 700,
             textAlign: {
-              xs: "center",
+              xs: "left",
               sm: "center",
               md: "left",
               lg: "left",
@@ -80,7 +83,7 @@ const Main: React.FC<IMain> = () => {
             marginBottom: "7px",
           }}
         >
-          o software que você
+          {matches ? "o software que você" : "que transforma"}
         </Typography>
         <Typography
           sx={{
@@ -88,7 +91,7 @@ const Main: React.FC<IMain> = () => {
             fontStyle: "normal",
             fontWeight: 700,
             textAlign: {
-              xs: "center",
+              xs: "left",
               sm: "center",
               md: "left",
               lg: "left",
@@ -112,10 +115,9 @@ const Main: React.FC<IMain> = () => {
             color: "#EF4230",
           }}
         >
-          precisa
+          {matches ? "precisa" : "a vida"}
         </Typography>
       </Grid>
-
       <Grid item xs={12} sm={12} md={7} lg={7} xl={6}>
         <Stack
           flex={1}
@@ -133,21 +135,21 @@ const Main: React.FC<IMain> = () => {
             sx={{
               position: "relative",
               right: {
-                xs: 0,
+                xs: 30,
                 sm: 0,
                 md: 0,
                 lg: 0,
                 xl: 0,
               },
               height: {
-                xs: 256.28,
+                xs: 330,
                 sm: 417.2,
                 md: 417.2,
                 lg: 536.4,
                 xl: 596,
               },
               width: {
-                xs: 317.34,
+                xs: 390,
                 sm: 516.6,
                 md: 516.6,
                 lg: 664.2,
@@ -189,26 +191,30 @@ const Main: React.FC<IMain> = () => {
         >
           <Typography
             sx={{
-              textAlign: {
-                xs: "center",
-                sm: "center",
-                md: "left",
-                lg: "left",
-                xl: "left",
-              },
+              textAlign: "left",
               marginBottom: "70px",
               fontFamily: "Podkova",
               fontStyle: "normal",
               fontWeight: 400,
-              fontSize: "20px",
+              fontSize: {
+                xs: "16px",
+                sm: "16px",
+                md: "20px",
+                lg: "20px",
+                xl: "20px",
+              },
               lineHeight: "149%",
               color: "#1B1F1E",
-              maxWidth: "418px",
+              maxWidth: {
+                md: "418px",
+                lg: "418px",
+                xl: "418px",
+              },
             }}
           >
-            Somos uma equipe de designers e desenvolvedores com um único
-            objetivo: cuidar de todos os detalhes enquanto você se mantém focado
-            em conduzir a mudança dentro da sua organização.
+            {matches
+              ? "Somos uma equipe de designers e desenvolvedores com um único objetivo: cuidar de todos os detalhes enquanto você se mantém focado em conduzir a mudança dentro da sua organização."
+              : "Maximize seu potencial com soluções de software exclusivas, para empresas que buscam inovação e eficiência"}
           </Typography>
           <Stack
             gap={3}
@@ -220,20 +226,8 @@ const Main: React.FC<IMain> = () => {
                 lg: "row",
                 xl: "row",
               },
-              alignItems: {
-                xs: "flex-start",
-                sm: "flex-start",
-                md: "center",
-                lg: "center",
-                xl: "center",
-              },
-              justifyContent: {
-                xs: "center",
-                sm: "center",
-                md: "flex-start",
-                lg: "flex-start",
-                xl: "flex-start",
-              },
+              alignItems: "center",
+              justifyContent: "flex-start",
             }}
           >
             <Button
@@ -251,13 +245,22 @@ const Main: React.FC<IMain> = () => {
                 fontFamily: "Red Hat Display",
                 fontStyle: "normal",
                 fontWeight: 600,
-                fontSize: "18px",
+                fontSize: {
+                  xs: "20px",
+                  sm: "20px",
+                  md: "22px",
+                  lg: "22px",
+                  xl: "22px",
+                },
                 lineHeight: "149%",
                 letterSpacing: "0.02em",
+                textTransform: "none",
+                padding: "16px 20px",
+                width: "364px",
                 color: "#FFFFFF",
               }}
             >
-              Fale com um especialista
+              Consulte um especialista
             </Button>
 
             <Button
