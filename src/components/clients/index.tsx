@@ -1,6 +1,6 @@
 import { Box, Grid, Stack, Typography, Container } from "@mui/material";
 import * as React from "react";
-import { Slider } from "../slider";
+import { Slider } from "./slider";
 import { Section } from "../section";
 import { SectionTitle } from "../sectionTitle";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";

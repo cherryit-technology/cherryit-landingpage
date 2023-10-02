@@ -11,9 +11,10 @@ import { OurBenefits } from "@/components/ourBenefits";
 import { Methodology } from "@/components/methodology";
 import { Testimonials } from "@/components/testimonials";
 import { Contact } from "@/components/contact";
-import { Articles } from "@/components/articles";
 import { Clients } from "@/components/clients";
 import { OurNumbers } from "@/components/ourNumbers";
+import { OurServices } from "@/components/ourServices";
+import { Articles } from "@/components/articles";
 
 export default function Home() {
   return (
@@ -24,11 +25,15 @@ export default function Home() {
       <OurTeam />
       <OurNumbers />
       <Clients />
+      <OurServices />
+      <Articles />
+      <Testimonials />
       <AboutUs />
+      <Contact />
 
-      <Container sx={{ mt: 12, mb: 12 }} maxWidth="xl">
+      {/* <Container sx={{ mt: 12, mb: 12 }} maxWidth="xl">
         <Stack
-          gap={12}
+          gap={2}
           sx={{
             position: "relative",
             top: {
@@ -40,17 +45,9 @@ export default function Home() {
             },
           }}
         >
-          <OurBenefits />
-
-          <Methodology />
-
-          <Articles />
-
-          <Testimonials />
-
-          <Contact />
+          
         </Stack>
-      </Container>
+      </Container> */}
 
       <Divider />
 

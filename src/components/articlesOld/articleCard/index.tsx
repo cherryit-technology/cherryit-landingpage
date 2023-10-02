@@ -53,7 +53,6 @@ const ArticleCard: React.FC<IArticleCard> = ({
           backgroundImage: `url(${image})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          borderRadius: "20px",
         }}
       />
       <Stack flexDirection="row" gap={3}>

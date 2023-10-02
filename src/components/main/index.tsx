@@ -159,6 +159,7 @@ const Main: React.FC<IMain> = () => {
                   lg: 664.2,
                   xl: 738,
                 },
+                zIndex: 9,
                 marginLeft: matches ? "0px" : "15px",
               }}
             >
@@ -252,6 +253,7 @@ const Main: React.FC<IMain> = () => {
                   fontFamily: "Red Hat Display",
                   fontStyle: "normal",
                   fontWeight: 600,
+                  zIndex: 9,
                   fontSize: {
                     xs: "20px",
                     sm: "20px",
