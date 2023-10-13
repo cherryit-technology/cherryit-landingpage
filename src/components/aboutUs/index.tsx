@@ -7,10 +7,12 @@ import CherryIt from "../../assets/cherryit-avatar.png";
 import FormaLeft from "../../assets/forma-aboutus-left.png";
 import FormaRight from "../../assets/forma-aboutus-right.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useRouter } from "next/router";
 
 interface IAboutUs {}
 
 const AboutUs: React.FC<IAboutUs> = () => {
+  const router = useRouter();
   const matchesMobile = useMediaQuery("(min-width:900px)");
   return (
     <Stack
@@ -111,11 +113,12 @@ const AboutUs: React.FC<IAboutUs> = () => {
               </Typography>
               <Button
                 variant="contained"
+                onClick={() => router.push("/sobre")}
                 sx={{
                   "&:hover": {
-                    color: "#48E49B",
-                    backgroundColor: "#FFFFFF",
-                    border: "2px solid #48E49B",
+                    color: "#FFFFFF",
+                    backgroundColor: "#6ef0b3",
+                    border: "2px solid ##6ef0b3",
                   },
                   background: "#48E49B",
                   border: "2px solid #48E49B",

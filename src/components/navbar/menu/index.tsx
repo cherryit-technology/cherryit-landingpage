@@ -49,6 +49,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
       </Button>
       <Button
         color="inherit"
+        onClick={() => router.push("/")}
         sx={{
           fontFamily: "Red Hat Display",
           fontStyle: "normal",
@@ -77,6 +78,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
       </Button> */}
       <Button
         color="inherit"
+        onClick={() => router.push("/blog")}
         sx={{
           fontFamily: "Red Hat Display",
           fontStyle: "normal",
@@ -91,6 +93,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
       </Button>
       <Button
         color="inherit"
+        onClick={() => router.push("/sobre")}
         sx={{
           fontFamily: "Red Hat Display",
           fontStyle: "normal",
