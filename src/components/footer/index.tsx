@@ -1,26 +1,27 @@
-import { IconButton, Stack, Typography } from '@mui/material'
-import Image from 'next/image'
-import * as React from 'react'
-import Marca_CherryIt_Preta from '../../assets/Marca_CherryIt_Preta 1.png'
-import face from '../../assets/face.png'
-import insta from '../../assets/insta.png'
-import twitter from '../../assets/twitter.png'
-import linkedin from '../../assets/linkedin.png'
+import { IconButton, Stack, Typography } from "@mui/material";
+import Image from "next/image";
+import * as React from "react";
+import Marca_CherryIt_Preta from "../../assets/Marca_CherryIt_Preta 1.png";
+import face from "../../assets/face.png";
+import insta from "../../assets/insta.png";
+import twitter from "../../assets/twitter.png";
+import linkedin from "../../assets/linkedin.png";
+import { Link } from "../link";
 
 const Footer: React.FC = () => {
   return (
     <Stack
       gap={6}
       sx={{
-        padding: '40px',
+        padding: "40px",
         flexDirection: {
-          xs: 'column',
-          sm: 'column',
-          md: 'row',
-          lg: 'row',
-          xl: 'row',
+          xs: "column",
+          sm: "column",
+          md: "row",
+          lg: "row",
+          xl: "row",
         },
-        justifyContent: 'space-around'  
+        justifyContent: "space-around",
       }}
     >
       <Stack>
@@ -32,77 +33,77 @@ const Footer: React.FC = () => {
         />
         <Typography
           sx={{
-            fontFamily: 'Red Hat Display',
-            fontStyle: 'normal',
+            fontFamily: "Red Hat Display",
+            fontStyle: "normal",
             fontWeight: 500,
-            fontSize: '12px',
-            lineHeight: '20px',
-            color: '#1B1F1E',
-            mb: 3
+            fontSize: "12px",
+            lineHeight: "20px",
+            color: "#1B1F1E",
+            mb: 3,
           }}
         >
           Tecnologia que transforma a vida
         </Typography>
         <Typography
-            sx={{
-            fontFamily: 'Red Hat Display',
-            fontStyle: 'normal',
+          sx={{
+            fontFamily: "Red Hat Display",
+            fontStyle: "normal",
             fontWeight: 500,
-            fontSize: '12px',
-            lineHeight: '20px',
-            color: '#1B1F1E',
+            fontSize: "12px",
+            lineHeight: "20px",
+            color: "#1B1F1E",
           }}
         >
           All rights reserved@cherryit
         </Typography>
       </Stack>
-      
+
       <Stack>
         <Typography
           sx={{
-            fontFamily: 'Red Hat Display',
-            fontStyle: 'normal',
+            fontFamily: "Red Hat Display",
+            fontStyle: "normal",
             fontWeight: 600,
-            fontSize: '16px',
-            lineHeight: '21px',
-            color: '#1B1F1E',
-            mb: 3
+            fontSize: "16px",
+            lineHeight: "21px",
+            color: "#1B1F1E",
+            mb: 3,
           }}
         >
           Política
         </Typography>
-        <Typography
+        <Link href={"/politica"}>
+          <Typography
             sx={{
-            fontFamily: 'Red Hat Display',
-            fontStyle: 'normal',
-            fontWeight: 400,
-            fontSize: '12px',
-            lineHeight: '16px',
-            color: '#1B1F1E',
-            mb: 3
-          }}
-        >
-          Política de segurança da informação
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: 'Red Hat Display',
-            fontStyle: 'normal',
-            fontWeight: 400,
-            fontSize: '12px',
-            lineHeight: '16px',
-            color: '#1B1F1E',
-          }}
-        >
-          Código de ética
-        </Typography>
+              fontFamily: "Red Hat Display",
+              fontStyle: "normal",
+              fontWeight: 400,
+              fontSize: "12px",
+              lineHeight: "16px",
+              color: "#1B1F1E",
+              mb: 3,
+            }}
+          >
+            Política de segurança da informação
+          </Typography>
+        </Link>
+        <Link href={"/etica"}>
+          <Typography
+            sx={{
+              fontFamily: "Red Hat Display",
+              fontStyle: "normal",
+              fontWeight: 400,
+              fontSize: "12px",
+              lineHeight: "16px",
+              color: "#1B1F1E",
+            }}
+          >
+            Código de ética
+          </Typography>
+        </Link>
       </Stack>
 
-      <Stack
-        gap={1}
-        flexDirection="row"
-      >
-        
+      <Stack gap={1} flexDirection="row">
         {/* <IconButton
           sx={{
             height: 41,
@@ -118,21 +119,16 @@ const Footer: React.FC = () => {
         </IconButton> */}
 
         <IconButton
-           href="https://www.linkedin.com/company/cherryit/"
-           target="_blank"
-           sx={{
+          href="https://www.linkedin.com/company/cherryit/"
+          target="_blank"
+          sx={{
             height: 41,
-            width: 41
+            width: 41,
           }}
         >
-          <Image
-            src={linkedin}
-            alt="linkedin"
-            width={41}
-            height={41}
-          />
+          <Image src={linkedin} alt="linkedin" width={41} height={41} />
         </IconButton>
-        
+
         {/* <IconButton
           href="https://www.instagram.com/cherryit.co/"
           target="_blank"
@@ -148,7 +144,7 @@ const Footer: React.FC = () => {
             height={41}
           />
         </IconButton> */}
-        
+
         {/* <IconButton
           sx={{
             height: 41,
@@ -162,11 +158,9 @@ const Footer: React.FC = () => {
             height={41}
           />
         </IconButton> */}
-
       </Stack>
-
     </Stack>
-  )
-}
+  );
+};
 
-export { Footer }
+export { Footer };
