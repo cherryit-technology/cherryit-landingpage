@@ -6,9 +6,13 @@ import { SectionTitle } from "../sectionTitle";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import Image from "next/image";
-import LogoBNDES from "../../assets/logo-bndes.png";
-import LogoIDB from "../../assets/logo-idb.png";
-import LogoCeara from "../../assets/logo-ceara.png";
+import LogoBNDES from "../../assets/bndes.png";
+import LogoBID from "../../assets/bid.png";
+import LogoCeara from "../../assets/ceara.png";
+import LogoTransfacil from "../../assets/transfacil.png";
+import Logo2M from "../../assets/2m_solutions.png";
+import LogoCNI from "../../assets/cni.png";
+import LogoMacroplan from "../../assets/macroplan.png";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 function SamplePrevArrow(props: any) {
@@ -217,10 +221,9 @@ const Clients: React.FC = () => {
                         padding: "5px",
                         background: matches ? "#F8F8F8" : "#7568FF",
                         borderRadius: "0 0 20px 20px",
-                        textTransform: "capitalize",
                       }}
                     >
-                      banco nacional de desenvolvimento
+                      BNDES - Banco de Desenvolvimento
                     </Typography>
                   </Box>
                   <Box
@@ -250,7 +253,7 @@ const Clients: React.FC = () => {
                       }}
                     >
                       <Image
-                        src={LogoIDB}
+                        src={LogoBID}
                         alt="pCMockup"
                         fill
                         style={{
@@ -271,10 +274,9 @@ const Clients: React.FC = () => {
                         padding: "5px",
                         background: matches ? "#F8F8F8" : "#7568FF",
                         borderRadius: "0 0 20px 20px",
-                        textTransform: "capitalize",
                       }}
                     >
-                      Inter-American development Bank
+                      BID - Banco de Desenvolvimento
                     </Typography>
                   </Box>
                   <Box
@@ -325,10 +327,9 @@ const Clients: React.FC = () => {
                         padding: "5px",
                         background: matches ? "#F8F8F8" : "#7568FF",
                         borderRadius: "0 0 20px 20px",
-                        textTransform: "capitalize",
                       }}
                     >
-                      banco nacional de desenvolvimento
+                      Estado do Ceará
                     </Typography>
                   </Box>
                   <Box
@@ -358,7 +359,7 @@ const Clients: React.FC = () => {
                       }}
                     >
                       <Image
-                        src={LogoIDB}
+                        src={LogoTransfacil}
                         alt="pCMockup"
                         fill
                         style={{
@@ -379,10 +380,168 @@ const Clients: React.FC = () => {
                         padding: "5px",
                         background: matches ? "#F8F8F8" : "#7568FF",
                         borderRadius: "0 0 20px 20px",
-                        textTransform: "capitalize",
                       }}
                     >
-                      Inter-American development Bank
+                      Transfácil - Mobilidade
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      borderRadius: "20px",
+                      border: matches
+                        ? "1px solid #EDEDED"
+                        : "1px solid #7568FF",
+                      background: "#FFF",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "0",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "relative",
+                        height: "50px",
+                        margin: "10px",
+                        width: "auto",
+                      }}
+                    >
+                      <Image
+                        src={Logo2M}
+                        alt="pCMockup"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                        }}
+                      />
+                    </Box>
+                    <Typography
+                      sx={{
+                        width: "auto",
+                        textAlign: "center",
+                        fontFamily: "Red Hat Display",
+                        fontSize: "14px",
+                        fontWeight: "400px",
+                        letterSpacing: "0px",
+                        color: matches ? "#1B1F1E" : "#fff",
+                        opacity: 1,
+                        padding: "5px",
+                        background: matches ? "#F8F8F8" : "#7568FF",
+                        borderRadius: "0 0 20px 20px",
+                      }}
+                    >
+                      2M Solutions - Healthtech
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      borderRadius: "20px",
+                      border: matches
+                        ? "1px solid #EDEDED"
+                        : "1px solid #7568FF",
+                      background: "#FFF",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "0",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "relative",
+                        height: "50px",
+                        margin: "10px",
+                        width: "auto",
+                      }}
+                    >
+                      <Image
+                        src={LogoCNI}
+                        alt="pCMockup"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                        }}
+                      />
+                    </Box>
+                    <Typography
+                      sx={{
+                        width: "auto",
+                        textAlign: "center",
+                        fontFamily: "Red Hat Display",
+                        fontSize: "14px",
+                        fontWeight: "400px",
+                        letterSpacing: "0px",
+                        color: matches ? "#1B1F1E" : "#fff",
+                        opacity: 1,
+                        padding: "5px",
+                        background: matches ? "#F8F8F8" : "#7568FF",
+                        borderRadius: "0 0 20px 20px",
+                      }}
+                    >
+                      CNI
+                    </Typography>
+                  </Box>
+                  <Box
+                    sx={{
+                      borderRadius: "20px",
+                      border: matches
+                        ? "1px solid #EDEDED"
+                        : "1px solid #7568FF",
+                      background: "#FFF",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      padding: "0",
+                      textAlign: "center",
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        position: "relative",
+                        height: "50px",
+                        margin: "10px",
+                        width: "auto",
+                      }}
+                    >
+                      <Image
+                        src={LogoMacroplan}
+                        alt="pCMockup"
+                        fill
+                        style={{
+                          objectFit: "contain",
+                        }}
+                      />
+                    </Box>
+                    <Typography
+                      sx={{
+                        width: "auto",
+                        textAlign: "center",
+                        fontFamily: "Red Hat Display",
+                        fontSize: "14px",
+                        fontWeight: "400px",
+                        letterSpacing: "0px",
+                        color: matches ? "#1B1F1E" : "#fff",
+                        opacity: 1,
+                        padding: "5px",
+                        background: matches ? "#F8F8F8" : "#7568FF",
+                        borderRadius: "0 0 20px 20px",
+                      }}
+                    >
+                      Macroplan - Consultoria Estratégica
                     </Typography>
                   </Box>
                 </Slider>

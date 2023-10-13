@@ -45,7 +45,7 @@ const MenuCollapse: React.FC = () => {
         }}
       >
         <MenuItem>Início</MenuItem>
-        <MenuItem>O processo</MenuItem>
+        {/* <MenuItem>O processo</MenuItem> */}
         <MenuItem>Artigos</MenuItem>
         <MenuItem>Sobre nós</MenuItem>
       </MuiMenu>

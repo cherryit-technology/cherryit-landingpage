@@ -16,6 +16,8 @@ import Group44780 from "../../assets/Group44780.png";
 import Group44782 from "../../assets/Group44782.png";
 import Group44781 from "../../assets/Group44781.png";
 import Image from "next/image";
+import GrafisLeft from "../../assets/grafis_form_left.png";
+import GrafisRight from "../../assets/grafis_form_right.png";
 import { ContactForm } from "../contactForm";
 import Link from "next/link";
 
@@ -161,7 +163,63 @@ const Contact: React.FC<IContact> = () => {
                 AGENDE UMA REUNIÃO
               </Typography>
             </Stack>
-
+            <Box
+              sx={{
+                marginLeft: "-240px",
+                zIndex: -1,
+                position: "absolute",
+                width: "252px",
+                height: "186px",
+                display: {
+                  xs: "none",
+                  sm: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                },
+              }}
+            >
+              <Image
+                src={GrafisLeft}
+                alt="Grafismo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
+            <Box
+              sx={{
+                right: {
+                  xs: 0,
+                  sm: 0,
+                  md: 130,
+                  lg: 250,
+                  xl: 400,
+                },
+                display: {
+                  xs: "none",
+                  sm: "none",
+                  md: "block",
+                  lg: "block",
+                  xl: "block",
+                },
+                marginTop: "150px",
+                zIndex: -1,
+                position: "absolute",
+                width: "341px",
+                height: "246px",
+              }}
+            >
+              <Image
+                src={GrafisRight}
+                alt="Grafismo"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+              />
+            </Box>
             <ContactForm />
           </Box>
         </Stack>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Box, Container, Divider, Stack } from "@mui/material";
+import { Box, Divider } from "@mui/material";
 import { Footer } from "@/components/footer";
 
 import { Navbar } from "@/components/navbar";
@@ -7,14 +7,12 @@ import { Main } from "@/components/main";
 import { ClockSection } from "@/components/clockSection";
 import { OurTeam } from "@/components/ourTeam";
 import { AboutUs } from "@/components/aboutUs";
-import { OurBenefits } from "@/components/ourBenefits";
-import { Methodology } from "@/components/methodology";
-import { Testimonials } from "@/components/testimonials";
 import { Contact } from "@/components/contact";
 import { Clients } from "@/components/clients";
 import { OurNumbers } from "@/components/ourNumbers";
 import { OurServices } from "@/components/ourServices";
 import { Articles } from "@/components/articles";
+import { TestimonialsOld } from "@/components/testimonialsOld";
 
 export default function Home() {
   return (
@@ -27,7 +25,7 @@ export default function Home() {
       <Clients />
       <OurServices />
       <Articles />
-      <Testimonials />
+      <TestimonialsOld />
       <AboutUs />
       <Contact />
 

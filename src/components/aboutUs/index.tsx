@@ -43,6 +43,7 @@ const AboutUs: React.FC<IAboutUs> = () => {
           <Stack
             alignItems="center"
             justifyContent="center"
+            id="sobre"
             gap={6}
             sx={{
               flexDirection: {
@@ -140,7 +141,7 @@ const AboutUs: React.FC<IAboutUs> = () => {
                   zIndex: 9,
                 }}
               >
-                Saiba mais sobre a cherryit
+                Saiba mais sobre a Cherry IT
               </Button>
               <Box
                 sx={{

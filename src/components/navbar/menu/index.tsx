@@ -47,7 +47,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
       >
         Agende uma reunião
       </Button>
-      {/* <Button
+      <Button
         color="inherit"
         sx={{
           fontFamily: "Red Hat Display",
@@ -61,7 +61,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
       >
         Início
       </Button>
-      <Button
+      {/* <Button
         color="inherit"
         sx={{
           fontFamily: "Red Hat Display",
@@ -74,7 +74,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
         }}
       >
         O processo
-      </Button>
+      </Button> */}
       <Button
         color="inherit"
         sx={{
@@ -102,7 +102,7 @@ const Menu: React.FC<IMenu> = ({ isHome }) => {
         }}
       >
         Sobre nós
-      </Button> */}
+      </Button>
     </Stack>
   );
 };
