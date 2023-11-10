@@ -221,7 +221,7 @@ const Main: React.FC<IMain> = () => {
               }}
             >
               {matches
-                ? "Somos uma equipe de designers e desenvolvedores sêniores. Cuidamos de todos os detalhes enquanto você se mantém focado na execução da estratégia e conduzindo a mudança em sua organização."
+                ? "Somos uma equipe de designers e desenvolvedores sêniores. Cuidamos de todos os detalhes enquanto você se mantém focado em executar a estratégia e conduzir a mudança em sua organização."
                 : ""}
             </Typography>
             <Stack
