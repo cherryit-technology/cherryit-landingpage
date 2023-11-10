@@ -46,10 +46,10 @@ const MenuCollapse: React.FC = () => {
           horizontal: "left",
         }}
       >
-        <MenuItem onClick={() => router.push("/")}>Início</MenuItem>
-        {/* <MenuItem>O processo</MenuItem> */}
+        {/*<MenuItem onClick={() => router.push("/")}>Início</MenuItem>
+         <MenuItem>O processo</MenuItem>
         <MenuItem onClick={() => router.push("/blog")}>Artigos</MenuItem>
-        <MenuItem onClick={() => router.push("/sobre")}>Sobre nós</MenuItem>
+        <MenuItem onClick={() => router.push("/sobre")}>Sobre nós</MenuItem>  */}
       </MuiMenu>
     </Box>
   );
