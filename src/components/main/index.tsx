@@ -12,7 +12,7 @@ const Main: React.FC<IMain> = () => {
     sectionElement?.scrollIntoView({ behavior: "smooth" });
   }, []);
 
-  const matches = useMediaQuery("(min-width:899px)");
+  const matches = true; // useMediaQuery("(min-width:899px)");
 
   return (
     <Container sx={{ mt: 12, mb: 12 }} maxWidth="xl">
@@ -221,8 +221,8 @@ const Main: React.FC<IMain> = () => {
               }}
             >
               {matches
-                ? "Somos uma equipe de designers e desenvolvedores com um único objetivo: cuidar de todos os detalhes enquanto você se mantém focado em conduzir a mudança dentro da sua organização."
-                : "Maximize seu potencial com soluções de software exclusivas, para empresas que buscam inovação e eficiência"}
+                ? "Somos uma equipe de designers e desenvolvedores sêniores. Cuidamos de todos os detalhes enquanto você se mantém focado na execução da estratégia e conduzindo a mudança em sua organização."
+                : ""}
             </Typography>
             <Stack
               gap={3}
