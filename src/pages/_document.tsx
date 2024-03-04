@@ -55,7 +55,8 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
           )}
         </script> */}
 
-        {/* <script
+        /* rastreamento do CRM. favor manter */
+         <script
           type="text/javascript"
           id="hs-script-loader"
           async
@@ -63,6 +64,7 @@ export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {
           src="//js.hs-scripts.com/40071122.js"
         ></script>
 
+        {/*
         <script
           charset="utf-8"
           type="text/javascript"
