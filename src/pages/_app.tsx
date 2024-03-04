@@ -18,7 +18,7 @@ export default function MyApp(props: MyAppProps) {
     <CacheProvider value={emotionCache}>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <title>Cherry IT - Tecnologia que transforma a vida</title>
+        <title>Cherry IT - Tecnologia que cultiva um mundo melhor</title>
       </Head>
       <ProviderTheme>
         <Component {...pageProps} />

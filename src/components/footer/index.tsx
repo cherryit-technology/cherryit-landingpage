@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
             mb: 3,
           }}
         >
-          Tecnologia que transforma a vida
+          Tecnologia que cultiva um mundo melhor
         </Typography>
         <Typography
           sx={{
