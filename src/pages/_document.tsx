@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import * as React from "react";
+import Script from 'next/script';
 import Document, {
   Html,
   Head,
